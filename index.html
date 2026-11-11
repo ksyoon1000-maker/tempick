@@ -17,7 +17,10 @@ a.go{background:var(--accent);color:var(--btn-text)}a.watch{border:1px solid var
 </style></head><body><main>
 <h1>TEMPICK</h1><p class="intro">영상에서 본 제품, 번호로 찾아 바로 확인해 보세요.</p>
 <input id="q" type="search" placeholder="번호나 이름으로 찾기 (예: 3, 여수)" aria-label="번호나 이름으로 찾기">
-<div id="list"><div class="item" data-no="8" data-k="볼케이노 불멍 화산 가습기 방에서 안전하게 불멍 감성 내는 법"><img src="img/8.jpg" alt="" loading="lazy" width="72" height="128">
+<div id="list"><div class="item" data-no="9" data-k="포른 우주인 오로라 무드등 집들이 선물로 줬더니 침대 밖으로 안 나온다는 무드등"><img src="img/9.jpg" alt="" loading="lazy" width="72" height="128">
+<div><span class="no">9번</span><div class="name">포른 우주인 오로라 무드등</div><p class="desc">집들이 선물로 줬더니 침대 밖으로 안 나온다는 무드등</p>
+<div class="btns"><a class="btn go" href="https://www.11st.co.kr/products/4617161596" target="_blank" rel="noopener sponsored">제품 보러 가기</a><a class="btn watch" href="https://youtube.com/shorts/gQujDpucKzc" target="_blank" rel="noopener">영상 보기</a></div></div></div>
+<div class="item" data-no="8" data-k="볼케이노 불멍 화산 가습기 방에서 안전하게 불멍 감성 내는 법"><img src="img/8.jpg" alt="" loading="lazy" width="72" height="128">
 <div><span class="no">8번</span><div class="name">볼케이노 불멍 화산 가습기</div><p class="desc">방에서 안전하게 불멍 감성 내는 법</p>
 <div class="btns"><a class="btn go" href="https://link.coupang.com/a/iveUBGIrlc" target="_blank" rel="noopener sponsored">제품 보러 가기</a><a class="btn watch" href="https://youtube.com/shorts/OjqktMJwVaE" target="_blank" rel="noopener">영상 보기</a></div></div></div>
 <div class="item" data-no="7" data-k="스프레이 겸용 유리 오일병 350ml 에어프라이어 요리가 자꾸 퍽퍽하게 마르는 이유"><img src="img/7.jpg" alt="" loading="lazy" width="72" height="128">
@@ -41,7 +44,7 @@ a.go{background:var(--accent);color:var(--btn-text)}a.watch{border:1px solid var
 <div class="item" data-no="1" data-k="바키퍼스프렌드 파우더 클렌저 탄 스텐 냄비 철수세미로 긁지 마세요! 가루 하나로 해결"><img src="img/1.jpg" alt="" loading="lazy" width="72" height="128">
 <div><span class="no">1번</span><div class="name">바키퍼스프렌드 파우더 클렌저</div><p class="desc">탄 스텐 냄비 철수세미로 긁지 마세요! 가루 하나로 해결</p>
 <div class="btns"><a class="btn go" href="https://link.coupang.com/a/iszc8KLkUC" target="_blank" rel="noopener sponsored">제품 보러 가기</a><a class="btn watch" href="https://youtube.com/shorts/eJmiux6OlIk" target="_blank" rel="noopener">영상 보기</a></div></div></div></div><p class="empty" id="none" hidden>찾는 항목이 없어요.</p>
-<footer>이 페이지는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 일부 링크는 제휴 링크로, 링크를 통해 구매하면 채널이 수수료를 받을 수 있어요. 가격은 구매 시점에 따라 달라질 수 있어요.<br>마지막 업데이트 2026-11-08 13:03</footer>
+<footer>이 페이지는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 일부 링크는 제휴 링크로, 링크를 통해 구매하면 채널이 수수료를 받을 수 있어요. 가격은 구매 시점에 따라 달라질 수 있어요.<br>마지막 업데이트 2026-11-12 00:04</footer>
 </main><script>
 const q=document.getElementById("q"),rows=[...document.querySelectorAll(".item")];
 q.oninput=()=>{const v=q.value.trim().toLowerCase();let n=0;for(const r of rows){const ok=!v||r.dataset.no===v.replace(/[^0-9]/g,"")&&/^\d+$/.test(v)||r.dataset.k.includes(v);r.hidden=!ok;n+=ok}document.getElementById("none").hidden=n>0};
